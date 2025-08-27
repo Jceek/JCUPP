@@ -789,11 +789,11 @@ Transform:
   m_GameObject: {fileID: 465692565}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03333346, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.2550297, y: 1.7500002, z: 0.2536199}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 606474257}
+  m_Father: {fileID: 2117224684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &485178394
 GameObject:
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f94f3375e08eef42ab097dd10a6e47f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovePlatform
-  mSpeed: 0
+  moveSpeed: 0.5
   moveSound: {fileID: 0}
 --- !u!65 &606474254
 BoxCollider:
@@ -1059,14 +1059,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606474252}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.3, y: 0, z: 4}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.2550297, y: 0, z: 0.2536199}
   m_LocalScale: {x: 1.5, y: 0.1, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 465692566}
-  - {fileID: 1886378320}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 2117224684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644819954
 GameObject:
@@ -3258,11 +3256,11 @@ Transform:
   m_GameObject: {fileID: 1886378319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 50.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.2550297, y: 6.75, z: 0.2536199}
+  m_LocalScale: {x: 1.5, y: 0.1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 606474257}
+  m_Father: {fileID: 2117224684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1925084757
 GameObject:
@@ -3631,6 +3629,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099279766}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2117224683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2117224684}
+  m_Layer: 0
+  m_Name: PlatformTunnel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2117224684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117224683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.55503, y: 0.05, z: 3.74638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 465692566}
+  - {fileID: 606474257}
+  - {fileID: 1886378320}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1605028895189778468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3790,4 +3822,4 @@ SceneRoots:
   - {fileID: 1510551718}
   - {fileID: 1621330747}
   - {fileID: 1302263494}
-  - {fileID: 606474257}
+  - {fileID: 2117224684}
